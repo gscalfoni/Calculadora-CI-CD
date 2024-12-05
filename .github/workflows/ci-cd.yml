@@ -30,8 +30,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
         npx sonarqube-scanner \
-        -Dsonar.organization=euGSCAL \
-        -Dsonar.projectKey=gscalfoni_key \
+        -Dsonar.organization=eugscal \
+        -Dsonar.projectKey=eugscal \
         -Dsonar.sources=src \
         -Dsonar.tests=src \
         -Dsonar.language=ts \
