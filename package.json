@@ -5,22 +5,27 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "lint": "eslint . --ext .ts",
-    "prepare": "npm run build"
-  },
-  "keywords": ["calculator", "typescript", "ci-cd", "npm-package"],
-  "author": "Seu Nome",
+  "build": "tsc",
+  "test": "jest --config jest.config.js",
+  "coverage": "jest --coverage",
+  "lint": "eslint . --ext .ts",
+  "prepare": "npm run build"
+},
+  "keywords": [
+    "calculator",
+    "typescript",
+    "ci-cd",
+    "npm-package"
+  ],
+  "author": "EU",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "jest": "^29.0.0",
-    "@types/jest": "^29.0.0",
-    "eslint": "^8.0.0",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0"
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.0.0"
   }
 }
-
