@@ -35,7 +35,7 @@ jobs:
         -Dsonar.sources=src \
         -Dsonar.tests=src \
         -Dsonar.language=ts \
-        -Dsonar.typescript.lcov.reportPaths=coverage/lcov.info
+        -Dsonar.typescript.lcov.reportPaths=coverage/lcov.info \
         -Dsonar.branch.name=main
 
   publish:
